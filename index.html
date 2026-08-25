@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Iyad Assaad Nekka — Anomaly Detection in Dynamic Graphs</title>
+
+<meta name="description" content="Iyad Assaad Nekka is a PhD candidate at the Higher National School of Computer Science (ESI), Algiers, working on explainable anomaly detection in dynamic graphs with graph neural networks.">
+<meta name="author" content="Iyad Assaad Nekka">
+<link rel="canonical" href="https://inekka-esi.github.io/">
+
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Iyad Assaad Nekka — Anomaly Detection in Dynamic Graphs">
+<meta property="og:description" content="PhD candidate at ESI Algiers. Explainable anomaly detection in dynamic graphs.">
+<meta property="og:image" content="https://inekka-esi.github.io/assets/profile.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Iyad Assaad Nekka",
+  "givenName": "Iyad",
+  "familyName": "Nekka",
+  "jobTitle": "PhD Candidate in Artificial Intelligence",
+  "description": "Researcher in explainable anomaly detection in dynamic graphs using graph neural networks.",
+  "url": "https://inekka-esi.github.io/",
+  "image": "https://inekka-esi.github.io/assets/profile.jpg",
+  "email": "mailto:i_nekka@esi.dz",
+  "identifier": "https://orcid.org/0009-0000-8023-5392",
+  "affiliation": {
+    "@type": "CollegeOrUniversity",
+    "name": "Higher National School of Computer Science (ESI)",
+    "alternateName": "École nationale Supérieure d'Informatique",
+    "address": { "@type": "PostalAddress", "addressLocality": "Algiers", "addressCountry": "DZ" }
+  },
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of Batna 2" },
+  "knowsAbout": [
+    "Anomaly detection", "Dynamic graphs", "Graph neural networks",
+    "Explainable artificial intelligence", "Deep learning", "Computer vision"
+  ],
+  "sameAs": [
+    "https://orcid.org/0009-0000-8023-5392",
+    "https://github.com/inekka-esi"
+  ]
+}
+</script>
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<canvas id="graph" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="topbar">
+  <span class="wordmark">IAN</span>
+  <nav class="topnav" aria-label="Sections">
+    <a href="#research">Research</a>
+    <a href="#papers">Papers</a>
+    <a href="#alian">ALIAN</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ── hero ───────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <p class="eyebrow">PhD Candidate · LCSI Laboratory · ESI Algiers</p>
+        <h1>Iyad Assaad<br><span class="surname">Nekka</span></h1>
+        <p class="lede">
+          I build anomaly detectors for graphs that change over time — and I make
+          them say <em>why</em> they flagged what they flagged.
+        </p>
+        <div class="hero-links">
+          <a class="btn btn-solid" href="#papers">Read the work</a>
+          <a class="btn" href="https://orcid.org/0009-0000-8023-5392" target="_blank" rel="noopener">ORCID</a>
+          <a class="btn" href="https://github.com/inekka-esi" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+
+      <figure class="portrait">
+        <div class="portrait-ring" aria-hidden="true"></div>
+        <img src="assets/profile.jpg" alt="Portrait of Iyad Assaad Nekka" width="640" height="640">
+      </figure>
+    </div>
+
+    <!-- signature: live detector readout tied to the canvas -->
+    <div class="readout" role="status" aria-live="off">
+      <span class="dot" aria-hidden="true"></span>
+      <span class="readout-label">stream</span>
+      <span id="readout-text">initialising evidence pool…</span>
+    </div>
+  </section>
+
+  <!-- ── research ───────────────────────────────────────── -->
+  <section id="research" class="band">
+    <div class="wrap">
+      <p class="eyebrow">01 — Research</p>
+      <h2>Detecting what shouldn't be there,<br>in networks that never sit still.</h2>
+
+      <div class="prose">
+        <p>
+          I am a PhD candidate in Artificial Intelligence at the Higher National
+          School of Computer Science (ESI, formerly INI and CERI) in Algiers,
+          within the LCSI Laboratory. My thesis is on anomaly detection in
+          dynamic graphs using deep learning, and specifically on graph neural
+          networks.
+        </p>
+        <p>
+          Transactions between accounts, connections between hosts, ratings
+          exchanged between traders — these arrive as a stream, not a snapshot.
+          Deep detectors have become good at scoring them. They have not become
+          good at explaining themselves, and an analyst who cannot see which
+          counterparty or which moment triggered an alert cannot act on it. That
+          gap is what my work addresses.
+        </p>
+      </div>
+
+      <ul class="topics">
+        <li>
+          <h3>Explainable detection</h3>
+          <p>Detectors whose explanation is the input to the decision, not a
+             model fitted afterwards to guess at it.</p>
+        </li>
+        <li>
+          <h3>Benchmarking &amp; evaluation</h3>
+          <p>Unified protocols for dynamic-graph anomaly detection, and the
+             leakage channels that inflate published numbers.</p>
+        </li>
+        <li>
+          <h3>Graph neural networks</h3>
+          <p>Temporal transformers, enclosing-subgraph representations, and
+             sparse selection over evidence.</p>
+        </li>
+        <li>
+          <h3>Applied intelligence</h3>
+          <p>Intelligent systems, smart-city applications, image processing and
+             computer vision, with a growing focus on medical AI.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ── papers ─────────────────────────────────────────── -->
+  <section id="papers" class="band band-alt">
+    <div class="wrap">
+      <p class="eyebrow">02 — Selected work</p>
+      <h2>Papers</h2>
+      <p class="note">
+        Statuses below are current as of this build. Verify before citing.
+      </p>
+
+      <ol class="papers">
+        <li>
+          <div class="paper-head">
+            <h3>EVIDENT: An Ante-Hoc Evidence Bottleneck for Intrinsically
+                Explainable Anomaly Detection in Dynamic Graphs</h3>
+            <span class="tag tag-live">In preparation</span>
+          </div>
+          <p>A detector whose anomaly score is computed only from a sparse
+             evidence set it selects inside its own forward pass, so sufficiency
+             holds by construction rather than by measurement.</p>
+          <p class="meta">First author · with H. Seba, W. K. Hidouci, K. Amrouche</p>
+        </li>
+
+        <li>
+          <div class="paper-head">
+            <h3>Deep Learning for Anomaly Detection in Dynamic Graphs:
+                A Verified Survey, Taxonomy and Benchmarking</h3>
+            <span class="tag">In preparation</span>
+          </div>
+          <p>A unified benchmark across detectors and corpora, and the finding
+             that rankings established under synthetic anomaly injection do not
+             survive contact with real labels.</p>
+          <p class="meta">First author · targeting IEEE TKDE</p>
+        </li>
+
+        <li>
+          <div class="paper-head">
+            <h3>Dual Spatial-Temporal Shapley Attribution for Explainable
+                Anomaly Detection in Dynamic Graphs</h3>
+            <span class="tag">Under review</span>
+          </div>
+          <p>A post-hoc framework that wraps a frozen transformer detector and
+             returns, per flagged edge, which neighbour nodes and which
+             historical snapshots drove the alert.</p>
+          <p class="meta">First author · SNAMS 2026 submission</p>
+        </li>
+
+        <li>
+          <div class="paper-head">
+            <h3>Post-hoc explainability for dynamic-graph detectors</h3>
+            <span class="tag">Series</span>
+          </div>
+          <p>Architecture-matched attribution for structural, contrastive,
+             recurrent and semi-supervised detectors — each pairing a specific
+             detector with an explanation procedure evaluated under a shared
+             fidelity protocol.</p>
+          <p class="meta">First author · multiple venues</p>
+        </li>
+      </ol>
+
+      <p class="profiles-line">
+        Full list on
+        <a href="https://orcid.org/0009-0000-8023-5392" target="_blank" rel="noopener">ORCID</a>,
+        <a href="#contact">Google&nbsp;Scholar</a> and
+        <a href="#contact">ResearchGate</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── alian ──────────────────────────────────────────── -->
+  <section id="alian" class="band">
+    <div class="wrap">
+      <p class="eyebrow">03 — Outside the lab</p>
+      <h2>ALIAN Business Services</h2>
+
+      <div class="prose">
+        <p>
+          I hold a Computer Science engineering degree and a Master's from the
+          University of Batna 2. Alongside the PhD I founded and run
+          <strong>ALIAN Business Services</strong>, based in Sétif.
+        </p>
+      </div>
+
+      <div class="services">
+        <article>
+          <h3>IT solutions &amp; software</h3>
+          <p>Custom websites, mobile applications and management systems, built
+             end to end.</p>
+        </article>
+        <article>
+          <h3>Real estate brokerage</h3>
+          <p>Property and consulting services, in collaboration with certified
+             land experts (experts fonciers).</p>
+        </article>
+        <article>
+          <h3>Administrative support</h3>
+          <p>Visa application assistance and form-filling, handled properly the
+             first time.</p>
+        </article>
+      </div>
+
+      <p class="visit">
+        Find the office by searching
+        <a href="https://www.google.com/maps/search/ALIAN+by+Iyad+Assaad+Nekka"
+           target="_blank" rel="noopener">“ALIAN by Iyad Assaad Nekka”</a>
+        on Google Maps.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── contact ────────────────────────────────────────── -->
+  <section id="contact" class="band band-alt">
+    <div class="wrap">
+      <p class="eyebrow">04 — Contact</p>
+      <h2>Get in touch</h2>
+      <p class="prose">
+        For research collaboration, reviewing, or anything about the work above,
+        email is best.
+      </p>
+
+      <div class="channels">
+        <a class="channel" href="mailto:i_nekka@esi.dz">
+          <span class="channel-k">Email</span>
+          <span class="channel-v">i_nekka@esi.dz</span>
+        </a>
+        <a class="channel" href="https://orcid.org/0009-0000-8023-5392" target="_blank" rel="noopener">
+          <span class="channel-k">ORCID</span>
+          <span class="channel-v">0009-0000-8023-5392</span>
+        </a>
+        <a class="channel" href="https://scholar.google.com/citations?hl=en&amp;user=REPLACE_ME" target="_blank" rel="noopener">
+          <span class="channel-k">Google Scholar</span>
+          <span class="channel-v">Iyad Assaad Nekka</span>
+        </a>
+        <a class="channel" href="https://www.researchgate.net/profile/REPLACE-ME" target="_blank" rel="noopener">
+          <span class="channel-k">ResearchGate</span>
+          <span class="channel-v">Iyad Assaad Nekka</span>
+        </a>
+        <a class="channel" href="https://github.com/inekka-esi" target="_blank" rel="noopener">
+          <span class="channel-k">GitHub</span>
+          <span class="channel-v">inekka-esi</span>
+        </a>
+        <a class="channel" href="https://www.linkedin.com/in/REPLACE-ME" target="_blank" rel="noopener">
+          <span class="channel-k">LinkedIn</span>
+          <span class="channel-v">Iyad Assaad Nekka</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>Iyad Assaad Nekka — LCSI Laboratory, ESI Algiers.</p>
+  <p class="colophon">Set in Space Grotesk and IBM Plex. The background is a
+     dynamic graph under continuous anomaly detection.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
